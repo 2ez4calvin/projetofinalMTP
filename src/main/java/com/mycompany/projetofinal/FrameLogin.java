@@ -4,6 +4,8 @@
  */
 package com.mycompany.projetofinal;
 
+import java.awt.Color;
+
 /**
  *
  * @author pepeu
@@ -124,9 +126,11 @@ public class FrameLogin extends javax.swing.JFrame {
 
     private void jButton1CadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1CadastrarActionPerformed
         if (jTextField1Usuario.getText().equals("root") == true && new String(jPasswordField1Senha.getPassword()).equals("123") == true) { // Corrigir para getPasssword
+            jLabel1Aviso.setForeground(Color.green);
             jLabel1Aviso.setText("Login Correto!");
         } else {
             jLabel1Aviso.setText("Login Incorreto!");
+            jLabel1Aviso.setForeground(Color.red);
         }
     
     }//GEN-LAST:event_jButton1CadastrarActionPerformed
